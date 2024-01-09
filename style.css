@@ -4,43 +4,148 @@
     --light: #F6FFF2;
     --dark: #263A4F;
 }
+/*------------ homepage start ------------*/
+
 
 /* start navbar */
 
-.navbar-dark .navbar-nav .nav-link {
-    padding: 10px 15px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    transition:.5s;
+    .navbar-dark .navbar-nav .nav-link {
+        padding: 10px 15px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        transition:.5s;
 
-}
-.sticky-top.navbar-dark .navbar-nav .nav-link {
-    padding: 20px 15px;
-}
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link.active {
-    background: var(--secondary);
-}
+    }
+    .sticky-top.navbar-dark .navbar-nav .nav-link {
+        padding: 20px 15px;
+    }
+    .navbar-dark .navbar-nav .nav-link:hover,
+    .navbar-dark .navbar-nav .nav-link.active {
+        background: var(--secondary);
+    }
 
 
 /*navbar end*/
+
 /*carousel start */
-.carousel-item img{
- max-height:800px;
-}
+
+.carousel-control-prev,
+    .carousel-control-next {
+        width: 5%; /* Adjust the width as needed */
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 1;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        height: 100%;
+    }
+
+    .carousel-control-prev {
+        left: 0;
+    }
+
+    .carousel-control-next {
+        right: 0;
+    }
+    /* Add this CSS to adjust caption size below 327 pixels width */
+    @media (max-width:500px) {
+        .carousel-caption h3 {
+            font-size:1.5rem; /* Adjust the font size as needed */
+        }
+
+        .carousel-caption h1 {
+            font-size:1rem; /* Adjust the font size as needed */
+        }
+
+        .carousel-caption a.btn {
+            font-size:1rem; /* Adjust the font size as needed */
+        }
+
+    }
+    @media (max-width:360px) {
+   .carousel-caption h3{
+    font-size:1em;
+   }
+    .carousel-caption h1,
+    .carousel-caption a {
+        font-size:0.5em;
+    }
+ 
+        
+    }
+
 
 /*carousel End*/
 
 /* start banner above the carousel*/
-
-@media (min-width: 991.98px) {
-    .banner {
-        position: relative;
-        margin-top:-90px;
-        z-index:1;
+    /* Large devices (desktops) */
+    @media (min-width: 992px) {
+        .banner {
+            position: relative;
+            margin-top: -90px;
+            z-index: 1;
+        }
     }
-}
+
+    /* Medium devices (tablets) */
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        .banner {
+            position: relative;
+            margin-top: -60px; /* Adjust the value for medium devices */
+            z-index: 1;
+        }
+    }
+
+    /* Small devices (phones) */
+    @media (max-width: 767.98px) {
+        .banner {
+            position: relative;
+            margin-top:-10px; /* Adjust the value for small devices */
+            z-index: 1;
+        }
+    }
+
+
+    .bg-vegetable {
+        background: linear-gradient(rgba(52, 173, 84, .2), rgba(52, 173, 84, .2)), url(./img/vegetable.png) bottom right no-repeat;
+        background-size: contain;
+    }
+
+    .bg-fruit {
+        background: linear-gradient(rgba(255, 153, 51, .2), rgba(255, 153, 51, .2)), url(./img/fruit.png) bottom right no-repeat;
+        background-size: contain;
+    }
+
 
 /*banner end*/
+
+/*footer start */
+
+    .bg-footer {
+        background: linear-gradient(rgba(0, 133,244, .9), rgba(0, 123, 255, 0.9)), url(./img/footer.png) center bottom no-repeat;
+        background-size: contain;
+    }
+
+    @media (min-width: 991.98px) {
+        .bg-footer {
+            margin-top:90px !important;
+        }
+    }
+    @media (min-width: 992px) {
+      .custom-margins {
+        margin-top: -60px;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .custom-margins {
+        margin-top: 0;
+      }
+    }
+
+/*footer End*/
+
