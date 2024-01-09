@@ -22,7 +22,7 @@
         padding: 20px 15px;
     }
     .navbar-dark .navbar-nav .nav-link:hover,
-    .navbar-dark .navbar-nav .nav-link.active {
+    .navbar-dark .navbar-nav .nav-link:active {
         background: var(--secondary);
     }
 
@@ -54,7 +54,7 @@
     /* Add this CSS to adjust caption size below 327 pixels width */
     @media (max-width:500px) {
         .carousel-caption h3 {
-            font-size:1.5rem; /* Adjust the font size as needed */
+            font-size:1.6rem; /* Adjust the font size as needed */
         }
 
         .carousel-caption h1 {
@@ -62,10 +62,11 @@
         }
 
         .carousel-caption a.btn {
-            font-size:1rem; /* Adjust the font size as needed */
+            font-size:.7rem; /* Adjust the font size as needed */
         }
 
     }
+    
     @media (max-width:360px) {
    .carousel-caption h3{
     font-size:1em;
@@ -77,11 +78,10 @@
  
         
     }
-
-
 /*carousel End*/
 
 /* start banner above the carousel*/
+
     /* Large devices (desktops) */
     @media (min-width: 992px) {
         .banner {
@@ -148,4 +148,53 @@
     }
 
 /*footer End*/
+/*top to the end*/
+.btn {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: .5s;
+}
 
+.btn-primary,
+.btn-secondary {
+    color: #FFFFFF;
+}
+
+.btn-square {
+    width: 36px;
+    height: 36px;
+}
+
+.btn-sm-square {
+    width: 28px;
+    height: 28px;
+}
+
+.btn-lg-square {
+    width: 46px;
+    height: 46px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 0;
+    border-radius: 0;
+    z-index: 99;
+}
+/*---------------- contact page------------*/
+.bg-hero {
+   background: url(./img/image.jpg) center center no-repeat;
+ background-size:cover;
+
+}
