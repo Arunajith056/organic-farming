@@ -198,3 +198,43 @@
  background-size:cover;
 
 }
+/*---------------- product page -----------*/
+.carousel {  
+  display: flex;  
+  overflow-x: scroll;  
+}  
+.carousel::-webkit-scrollbar {
+  display: none; /* Chrome and Safari */
+}
+
+.carousel::after {
+  content: "";
+  font-size: larger;
+  position: absolute;
+  z-index: 1;
+  width:100px; /* Change the width to your desired size */
+  height: 30px; /* Change the height to your desired size */
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 auto;  
+  width: 300px;  
+  margin-right: 20px; 
+  max-width:300px;
+  max-height:400px;
+}
+.product img{
+    width:100%;
+    height:70%;
+}
+
+ 
+.product:hover {  
+  box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.5);  
+}  
+.caption {
+  text-align: center;
+}
